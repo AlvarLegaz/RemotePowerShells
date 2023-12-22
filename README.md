@@ -11,7 +11,7 @@ Guía paso a paso para establecer una shell remota entre una máquina Linux y un
 1. Abre una terminal.
 2. Ejecuta el siguiente comando para iniciar un listener con Netcat:
    ```
-   bash
+   **bash
    nc -lvp 4444
    ```
    Donde `4444` es el puerto en el que deseas escuchar.
