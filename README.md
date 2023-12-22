@@ -5,7 +5,7 @@ Repositorio sobre shell remotas.
 \`\`\`markdown
 # Shell Remota entre Linux y Windows
 
-Este documento proporciona una guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat y Powercat.
+Guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat y Powercat.
 
 ## En la máquina Linux (Listener)
 
