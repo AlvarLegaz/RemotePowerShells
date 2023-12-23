@@ -9,7 +9,7 @@ Este documento proporciona una guía paso a paso para establecer una shell remot
 
 1. Abre una terminal.
 2. Ejecuta el siguiente comando para iniciar un listener con Netcat:
-   ```bash
+   ```
    nc -lvp 4444
    ```
    Donde `4444` es el puerto en el que deseas escuchar.
@@ -30,6 +30,7 @@ Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de Power
 # Shell Remota entre Linux y Windows con Powercat
 
 Guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat y Powercat.
+**IMPORTANTE:** muchos antivirus, como Windows Defender, identifican el archivo `powercat.ps1` como código malicioso una vez descargado, bloqueándolo y eliminándolo.
 
 ## En la máquina Linux (Listener)
 
