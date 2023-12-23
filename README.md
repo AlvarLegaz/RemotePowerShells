@@ -27,7 +27,7 @@ Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de Power
 
 
 
-# Shell Remota entre Linux y Windows
+# Shell Remota entre Linux y Windows con Powercat
 
 Guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat y Powercat.
 
