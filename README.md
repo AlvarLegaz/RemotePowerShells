@@ -30,7 +30,7 @@ Ahora, cuando te conectes desde tu máquina Linux, obtendrás una shell de Power
 # Shell Remota entre Linux y Windows con Powercat
 
 Guía paso a paso para establecer una shell remota entre una máquina Linux y una máquina Windows utilizando Netcat y Powercat.
-**IMPORTANTE:** muchos antivirus, como Windows Defender, identifican el archivo `powercat.ps1` como código malicioso una vez descargado, bloqueándolo y eliminándolo.
+**IMPORTANTE:** muchos antivirus, como Windows Defender, identifican el archivo `powercat.ps1` como código malicioso una vez descargado, procediendo a su bloqueo y eliminación.
 
 ## En la máquina Linux (Listener)
 
